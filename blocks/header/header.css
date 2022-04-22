@@ -62,7 +62,7 @@
   grid-area: img;
 }
 .header__image {
-  position: fixed;
+  position: absolute;
   margin-top: 10px;
 }
 
