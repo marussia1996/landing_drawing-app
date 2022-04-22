@@ -1,0 +1,69 @@
+.header {
+  background-color: #222222;
+  display: grid;
+  grid-template-columns: 650px 311px;
+  grid-template-areas: "logo img" "title img" "subtitle img" "button img";
+  padding-left: 160px;
+  padding-top: 30px;
+  border-radius: 20px;
+  margin-top: 10px;
+  justify-content: start;
+  column-gap: 82px;
+}
+.header__logo {
+  max-width: 40px;
+  min-height: 40px;
+  background-color: #fff;
+  grid-area: logo;
+  background-image: url("../../images/logo.svg");
+  background-size: 30.74px, 31.66px;
+  background-position: 3.19px 2.61px;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+.header__title {
+  margin: 60px 0 0;
+  padding: 0;
+  grid-area: title;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 69px;
+}
+.header__subtitle {
+  margin: 0;
+  padding: 28px 0 0;
+  font-style: normal;
+  font-weight: normal;
+  grid-area: subtitle;
+  font-size: 18px;
+  line-height: 26px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.header__button {
+  max-width: 240px;
+  grid-area: button;
+  background: #fff;
+  border-radius: 8px;
+  border: none;
+  padding: 15px 0;
+  margin: 108px 0 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #222222;
+}
+.header__wrapper-image {
+  grid-area: img;
+}
+.header__image {
+  position: fixed;
+  margin-top: 10px;
+}
+
+/*# sourceMappingURL=header.css.map */
