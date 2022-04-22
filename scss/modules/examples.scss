@@ -1,0 +1,24 @@
+.examples {
+  max-width: 1103px;
+  display: grid;
+  grid-template-rows: max-content max-content;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: auto;
+  column-gap: 25px;
+  margin-bottom: 120px;
+  &__title {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 120px;
+    grid-column: 1/4;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 68px;
+    color: #111111;
+  }
+  &__image {
+    max-width: 350px;
+    object-fit: contain;
+  }
+}
