@@ -1,0 +1,39 @@
+.function {
+  background-color: #e5e5e5;
+  max-width: 460px;
+  padding: 40px;
+  border-radius: 20px;
+  display: grid;
+  grid-template-rows: 20px 76px 92px;
+  row-gap: 20px;
+}
+.function__title {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  color: rgba(17, 17, 17, 0.6);
+}
+.function__subtitle {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
+  color: #111111;
+}
+.function__paragraph {
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(17, 17, 17, 0.6);
+}
+
+/*# sourceMappingURL=function.css.map */
