@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="pages/index.css" />
   </head>
   <body class="page">
-      <header class="header">
+    <header class="header">
+      <div class="header__content">
         <div class="header__logo"></div>
         <h1 class="header__title">Не умеете рисовать? Не беда!</h1>
         <p class="header__subtitle">
@@ -16,63 +17,95 @@
           шедевр.
         </p>
         <button class="header__button">Подробнее</button>
-        <div class="header__wrapper-image">
-          <img class="header__image" src="images/image_logo.svg"></img>
+      </div>
+      <div class="header__wrapper-image"></div>
+    </header>
+    <main class="main">
+      <section class="functions">
+        <div class="function">
+          <h2 class="function__title">AI</h2>
+          <h3 class="function__subtitle">Умный интелект приложения</h3>
+          <p class="function__paragraph">
+            С помощью AI приложение анализирует картины мастеров и современных
+            практиков рисования, и достраивает картину за вас.
+          </p>
         </div>
-      </header>
-      <main class="main">
-        <section class="functions">
-          <div class="function">
-            <h2 class="function__title">AI</h2>
-            <h3 class="function__subtitle">Умный интелект приложения</h3>
-            <p class="function__paragraph">С помощью AI приложение анализирует картины мастеров и современных практиков рисования,
-            и достраивает картину за вас.</p>
-          </div>
-          <div class="function">
-            <h2 class="function__title">Ч/Б и Цвет</h2>
-            <h3 class="function__subtitle">Рисуйте в любом стиле</h3>
-            <p class="function__paragraph">Будь то карандашная каляка-маляка или цветное произведение, приложение поможет в любой ситуации.</p>
-         </div>
-       </section>
-       <section class="examples">
-         <h2 class="examples__title">Чик-чирик и ваша каляка превращается в изумительное произведение искусства.</h2>
-         <img class="examples__image" src="images/exampes_1.svg" alt="">
-         <img class="examples__image" src="images/exampes_2.svg" alt="">
-         <img class="examples__image" src="images/exampes_3.svg" alt="">
-       </section>
-       <section class="functions">
-         <div class="function">
-           <h2 class="function__title">Быстро</h2>
-           <h3 class="function__subtitle">Проблем с рисованием — нет</h3>
-           <p class="function__paragraph">Рисуйте в приложении доступными кистями: карандаш, маркер, линер, масляная кисть и многие другие...</p>
-         </div>
-         <div class="function">
-           <h2 class="function__title">Просто</h2>
-           <h3 class="function__subtitle">Нарисовали, преобразовали, сохранили</h3>
-           <p class="function__paragraph">Раз, два, три, больше нечего тут рассказать.</p>
-         </div>
-       </section>
-       <section class="improvement">
-         <h2 class="improvement__title">Качайте приложение и улучшайте свои художества, а потом хвастайтесь ими!</h2>
-         <form class="improvement__form">
-           <h2 class="improvement__form-title">Хотите нам что-то посоветовать?</h2>
-           <p class="improvement__form-subtitle">Оставьте заявку и мы свяжемся с вами.</p>
-           <input type="text" placeholder="Ваше Имя" class="improvement__form-input improvement__form-input_type_name">
-           <input type="email" placeholder="Контактный Email" class="improvement__form-input improvement__form-input_type_email">
-           <textarea class="improvement__form-textarea improvement__form-input_type_text" placeholder="Сообщение" rows="4" name="comments"></textarea>
-           <button class="improvement__form-button">Оставить заявку</button>
-          </form>
-       </section>
-      </main>
-      <footer class="footer">
-        <div class="footer__info">
-          <h2 class="footer__title">Хотите скачать приложение?</h2>
-          <p class="footer__subtitle">Качайте в ЭпСтор и ГуглПлэй.</p>
-          <button class="footer__button">Уже скоро!</button>
+        <div class="function">
+          <h2 class="function__title">Ч/Б и Цвет</h2>
+          <h3 class="function__subtitle">Рисуйте в любом стиле</h3>
+          <p class="function__paragraph">
+            Будь то карандашная каляка-маляка или цветное произведение,
+            приложение поможет в любой ситуации.
+          </p>
         </div>
-        <div class="footer__wrapper-image">
-
+      </section>
+      <section class="examples">
+        <h2 class="examples__title">
+          Чик-чирик и ваша каляка превращается в изумительное произведение
+          искусства.
+        </h2>
+        <img class="examples__image" src="images/exampes_1.svg" alt="" />
+        <img class="examples__image" src="images/exampes_2.svg" alt="" />
+        <img class="examples__image" src="images/exampes_3.svg" alt="" />
+      </section>
+      <section class="functions">
+        <div class="function">
+          <h2 class="function__title">Быстро</h2>
+          <h3 class="function__subtitle">Проблем с рисованием — нет</h3>
+          <p class="function__paragraph">
+            Рисуйте в приложении доступными кистями: карандаш, маркер, линер,
+            масляная кисть и многие другие...
+          </p>
         </div>
-      </footer>
+        <div class="function">
+          <h2 class="function__title">Просто</h2>
+          <h3 class="function__subtitle">
+            Нарисовали, преобразовали, сохранили
+          </h3>
+          <p class="function__paragraph">
+            Раз, два, три, больше нечего тут рассказать.
+          </p>
+        </div>
+      </section>
+      <section class="improvement">
+        <h2 class="improvement__title">
+          Качайте приложение и улучшайте свои художества, а потом хвастайтесь
+          ими!
+        </h2>
+        <form class="improvement__form">
+          <h2 class="improvement__form-title">
+            Хотите нам что-то посоветовать?
+          </h2>
+          <p class="improvement__form-subtitle">
+            Оставьте заявку и мы свяжемся с вами.
+          </p>
+          <input
+            type="text"
+            placeholder="Ваше Имя"
+            class="improvement__form-input improvement__form-input_type_name"
+          />
+          <input
+            type="email"
+            placeholder="Контактный Email"
+            class="improvement__form-input improvement__form-input_type_email"
+          />
+          <textarea
+            class="improvement__form-textarea improvement__form-input_type_text"
+            placeholder="Сообщение"
+            rows="4"
+            name="comments"
+          ></textarea>
+          <button class="improvement__form-button">Оставить заявку</button>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__info">
+        <h2 class="footer__title">Хотите скачать приложение?</h2>
+        <p class="footer__subtitle">Качайте в ЭпСтор и ГуглПлэй.</p>
+        <button class="footer__button">Уже скоро!</button>
+      </div>
+      <div class="footer__wrapper-image"></div>
+    </footer>
   </body>
 </html>
