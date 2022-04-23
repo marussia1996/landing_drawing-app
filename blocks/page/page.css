@@ -1,7 +1,9 @@
 .page {
-  background-color: #f8f8f8;
+  background-color: #fff;
   color: #fff;
   font-family: "Inter";
+  max-width: 1420px;
+  margin: auto;
 }
 
 /*# sourceMappingURL=page.css.map */

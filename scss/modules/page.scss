@@ -1,6 +1,8 @@
 @import "../varibels";
 .page {
-  background-color: $pageColor;
+  background-color: $mainColor;
   color: $mainColor;
   font-family: "Inter";
+  max-width: $maxw;
+  margin: auto;
 }
