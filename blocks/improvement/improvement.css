@@ -1,0 +1,86 @@
+.improvement {
+  max-width: 1100px;
+  margin: 120px auto;
+}
+.improvement__title {
+  margin: 0;
+  margin-bottom: 120px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 69px;
+  color: #111111;
+}
+.improvement__form {
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  padding: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  column-gap: 40px;
+}
+.improvement__form-title {
+  grid-column: 1/3;
+  max-width: 500px;
+  margin: auto;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+  color: #111111;
+}
+.improvement__form-subtitle {
+  grid-column: 1/3;
+  max-width: 500px;
+  margin: auto;
+  padding: 20px 0 100px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: rgba(17, 17, 17, 0.6);
+}
+.improvement__form-input {
+  background: #fff;
+  border-radius: 8px;
+  border: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 15px 20px;
+}
+.improvement__form-input::placeholder {
+  color: rgba(17, 17, 17, 0.3);
+}
+.improvement__form-textarea {
+  background: #fff;
+  border-radius: 8px;
+  grid-column: 1/3;
+  border: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 15px 20px;
+  margin: 20px 0 30px;
+  resize: none;
+}
+.improvement__form-textarea::placeholder {
+  color: rgba(17, 17, 17, 0.3);
+}
+.improvement__form-button {
+  width: 194px;
+  height: 54px;
+  justify-self: end;
+  text-align: center;
+  color: #fff;
+  grid-column: 2/3;
+  background: #222222;
+  border-radius: 8px;
+}
+
+/*# sourceMappingURL=improvement.css.map */
