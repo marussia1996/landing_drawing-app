@@ -4,7 +4,8 @@ FILES=scss/modules/header.scss:blocks/header/header.css \
   scss/modules/functions.scss:blocks/functions/functions.css \
   scss/modules/function.scss:blocks/function/function.css \
   scss/modules/examples.scss:blocks/examples/examples.css \
-  scss/modules/improvement.scss:blocks/improvement/improvement.css
+  scss/modules/improvement.scss:blocks/improvement/improvement.css \
+  scss/modules/footer.scss:blocks/footer/footer.css
 
 watch:
 	sass --watch ${FILES}
