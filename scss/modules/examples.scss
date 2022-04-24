@@ -1,11 +1,18 @@
+@import "../mixins";
 .examples {
-  max-width: 1103px;
+  max-width: 1100px;
   display: grid;
   grid-template-rows: max-content max-content;
   grid-template-columns: 1fr 1fr 1fr;
   margin: auto;
   column-gap: 25px;
   margin-bottom: 120px;
+  @include tabletStyles {
+    margin-bottom: 0;
+    column-gap: 15px;
+    max-width: 708px;
+    padding-bottom: 3.19px;
+  }
   &__title {
     margin: 0;
     padding: 0;
@@ -16,6 +23,11 @@
     font-size: 60px;
     line-height: 68px;
     color: #111111;
+    @include desktopStyles {
+      margin: 0 30px 70px;
+      font-size: calc(33px + (60 - 33) * ((100vw - 768px) / (1140 - 768)));
+      line-height: calc(37px + (68 - 37) * ((100vw - 768px) / (1140 - 768)));
+    }
   }
   &__image {
     max-width: 350px;
