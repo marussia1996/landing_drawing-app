@@ -8,3 +8,8 @@
     @content;
   }
 }
+@mixin miniTabletStyles {
+  @media (max-width: 690px) {
+    @content;
+  }
+}

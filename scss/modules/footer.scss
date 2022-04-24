@@ -7,12 +7,21 @@
   border-radius: 20px;
   justify-content: center;
   margin-bottom: 10px;
-  grid-template-rows: max-content;
-  grid-template-columns: minmax(260px, 470px) 371px;
+  grid-template-columns: minmax(300px, 470px) 371px;
   column-gap: 259px;
   @include desktopStyles {
     column-gap: 79px;
     padding: 50px 0 50px 50px;
+  }
+  @include tabletStyles {
+    justify-content: start;
+    grid-template-columns: minmax(260px, 300px) 250px;
+  }
+  @include miniTabletStyles {
+    column-gap: 0;
+    justify-content: center;
+    grid-template-columns: 260px;
+    padding: 20px 0;
   }
 
   &__info {
@@ -67,12 +76,16 @@
     left: 0;
     width: 311px;
     height: 630px;
-    background: url("../../images/footer__image.svg");
+    background: url("../../images/footer.svg");
     background-size: contain;
     @include desktopStyles {
-      top: -229px;
+      top: -151px;
       width: 250px;
       height: 502px;
+      background: url("../../images/footer__image.svg");
+    }
+    @include miniTabletStyles {
+      display: none;
     }
   }
 }
