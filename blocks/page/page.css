@@ -3,6 +3,7 @@
   color: #fff;
   font-family: "Inter";
   max-width: 1420px;
+  width: calc(100vw - 20px);
   margin: auto;
 }
 

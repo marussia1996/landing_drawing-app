@@ -4,5 +4,6 @@
   color: $mainColor;
   font-family: "Inter";
   max-width: $maxw;
+  width: calc(100vw - 20px);
   margin: auto;
 }

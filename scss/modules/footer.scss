@@ -1,4 +1,5 @@
 @import "../varibels";
+@import "../mixins";
 .footer {
   background-color: $topAndBottomColor;
   display: grid;
@@ -6,9 +7,22 @@
   border-radius: 20px;
   justify-content: center;
   margin-bottom: 10px;
-  grid-template-rows: max-content;
-  grid-template-columns: minmax(260px, 470px) 371px;
+  grid-template-columns: minmax(300px, 470px) 371px;
   column-gap: 259px;
+  @include desktopStyles {
+    column-gap: 79px;
+    padding: 50px 0 50px 50px;
+  }
+  @include tabletStyles {
+    justify-content: start;
+    grid-template-columns: minmax(260px, 300px) 250px;
+  }
+  @include miniTabletStyles {
+    column-gap: 0;
+    justify-content: center;
+    grid-template-columns: 260px;
+    padding: 20px 0;
+  }
 
   &__info {
     max-width: 470px;
@@ -30,6 +44,9 @@
     font-size: 18px;
     line-height: 26px;
     color: rgba(255, 255, 255, 0.7);
+    @include desktopStyles {
+      padding: 20px 0 130px;
+    }
   }
   &__button {
     font-style: normal;
@@ -42,6 +59,10 @@
     border-radius: 8px;
     padding: 15px 0;
     border: none;
+    @include desktopStyles {
+      font-size: calc(14px + (16 - 14) * ((100vw - 768px) / (1140 - 768)));
+      padding: 12px 0;
+    }
   }
 
   &__wrapper-image {
@@ -55,6 +76,16 @@
     left: 0;
     width: 311px;
     height: 630px;
-    background: url("../../images/footer__image.svg");
+    background: url("../../images/footer.svg");
+    background-size: contain;
+    @include desktopStyles {
+      top: -151px;
+      width: 250px;
+      height: 502px;
+      background: url("../../images/footer__image.svg");
+    }
+    @include miniTabletStyles {
+      display: none;
+    }
   }
 }
