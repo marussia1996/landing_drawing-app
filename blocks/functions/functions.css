@@ -1,5 +1,4 @@
 .functions {
-  margin: 60px auto 120px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
@@ -11,6 +10,13 @@
     column-gap: 10px;
     max-width: 708px;
     margin: 70px auto;
+  }
+}
+@media (max-width: 550px) {
+  .functions {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
   }
 }
 

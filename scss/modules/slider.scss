@@ -1,0 +1,59 @@
+@import "../varibels";
+@import "../mixins";
+.slider {
+  position: relative;
+  margin: 60px auto 120px;
+  /* Чтобы во время перетаскивания слайда ничего не выделить внутри него */
+  user-select: none;
+  /* Чтобы запретить скролл страницы, если мы начали двигать слайдер по оси X */
+  touch-action: pan-y;
+  &__image {
+    pointer-events: none;
+  }
+  &__list {
+    overflow: hidden;
+    @include mediumTabletStyles {
+      max-width: 300px;
+      margin: 0 auto;
+    }
+    &_type_grab {
+      cursor: grab;
+    }
+    &_type_grabbing {
+      cursor: grabbing;
+    }
+  }
+  &__track {
+    display: flex;
+  }
+  &__slide {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include mediumTabletStyles {
+      width: 300px;
+    }
+  }
+  &__arrows {
+    text-align: center;
+    display: none;
+    @include mediumTabletStyles {
+      display: inline-block;
+    }
+  }
+  &__arrow {
+    cursor: pointer;
+    height: 4px;
+    width: 4px;
+    margin: 0 12px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    &_disabled {
+      opacity: 0.25;
+      pointer-events: none;
+    }
+  }
+}

@@ -1,0 +1,66 @@
+@charset "UTF-8";
+.slider {
+  position: relative;
+  margin: 60px auto 120px;
+  /* Чтобы во время перетаскивания слайда ничего не выделить внутри него */
+  user-select: none;
+  /* Чтобы запретить скролл страницы, если мы начали двигать слайдер по оси X */
+  touch-action: pan-y;
+}
+.slider__image {
+  pointer-events: none;
+}
+.slider__list {
+  overflow: hidden;
+}
+@media (max-width: 550px) {
+  .slider__list {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
+.slider__list_type_grab {
+  cursor: grab;
+}
+.slider__list_type_grabbing {
+  cursor: grabbing;
+}
+.slider__track {
+  display: flex;
+}
+.slider__slide {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 550px) {
+  .slider__slide {
+    width: 300px;
+  }
+}
+.slider__arrows {
+  text-align: center;
+  display: none;
+}
+@media (max-width: 550px) {
+  .slider__arrows {
+    display: inline-block;
+  }
+}
+.slider__arrow {
+  cursor: pointer;
+  height: 4px;
+  width: 4px;
+  margin: 0 12px;
+  background-color: #ddd;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.slider__arrow_disabled {
+  opacity: 0.25;
+  pointer-events: none;
+}
+
+/*# sourceMappingURL=slider.css.map */

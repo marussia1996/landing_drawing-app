@@ -13,3 +13,8 @@
     @content;
   }
 }
+@mixin mediumTabletStyles {
+  @media (max-width: 550px) {
+    @content;
+  }
+}
